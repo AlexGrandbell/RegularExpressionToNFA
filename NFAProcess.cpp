@@ -226,7 +226,7 @@ void NFAProcess::process3_ToNFA() {
                     NFAEdge nfaEdge = nfaGroup1.edges[i];
                     nfaEdge.start += 1;
                     if (nfaEdge.end == nfaGroup1.endState) {
-                        nfaEdge.end = nfaEdge.start;
+                        nfaEdge.end = nfaGroup1.startState + 1;
                     } else {
                         nfaEdge.end += 1;
                     }
