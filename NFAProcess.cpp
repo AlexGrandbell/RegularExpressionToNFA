@@ -271,5 +271,4 @@ void NFAProcess::printNFA() {
         }
         cout<<endl;
     }
-
 }
