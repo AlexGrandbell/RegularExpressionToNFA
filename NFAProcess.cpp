@@ -50,7 +50,7 @@ bool NFAProcess::isLetter(char c) {
     return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
 }
 
-//第一阶段处理：分隔元素
+//第一阶段处理：分隔元素（添加正规式省略的+号（或者说.号））
 void NFAProcess::process1_AddConcat() {
     //储存添加+后的字符串
     string newS = "";
